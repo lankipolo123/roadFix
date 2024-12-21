@@ -1,0 +1,22 @@
+/* Full Screen Background Image Styling */
+.background-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Styling for the header title */
+  ion-header {
+    position: relative;
+    z-index: 1;
+  }
+  

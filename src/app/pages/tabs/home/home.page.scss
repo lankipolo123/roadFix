@@ -1,0 +1,93 @@
+/* General container styles */
+.welcome-container {
+  margin: 20px;
+}
+
+/* Welcome card styling */
+.welcome-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card ion-card-header {
+  background-color: #ff3838;
+  color: white;
+}
+
+.welcome-card ion-card-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.welcome-card ion-card-content {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Reported Areas Section */
+.reported-areas-container {
+  margin: 20px;
+}
+
+.reported-areas-container ion-card {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reported-areas-container ion-card-header {
+  background-color: #ff3838;
+  color: white;
+}
+
+.reported-areas-container ion-card-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Image styling inside the reported areas */
+.reported-areas-container ion-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Styling for ion-card content in the reported areas */
+.reported-areas-container ion-card-content {
+  padding: 10px;
+}
+
+.reported-areas-container ion-card-content ion-label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Grid Layout for Reported Areas */
+ion-grid {
+  margin-top: 10px;
+}
+
+ion-col {
+  padding: 5px;
+}
+
+ion-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* General styling for ion-list and ion-item */
+ion-list {
+  padding: 0;
+}
+
+ion-item {
+  border: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #333;
+}

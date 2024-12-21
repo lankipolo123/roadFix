@@ -1,0 +1,46 @@
+<ion-content color="medium">
+  <!-- Welcome Section -->
+  <ion-header>
+    <ion-toolbar color="primary">
+      <div style="text-align: center; width: 100%;">
+        <img src="/assets/roadfixLogo.png" alt="RoadFix Logo" style="height: 40px;" />
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Welcome Card -->
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Welcome, User!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>We're happy to have you back. Here's what's happening in your area.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Reported Areas Section -->
+  <ion-card color="secondary">
+    <ion-card-header color="primary">
+      <ion-card-title>Reported Areas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <!-- Loop through reports and display dynamically -->
+          <ion-col size="12" size-md="6" *ngFor="let report of reports">
+            <ion-card>
+              <img
+                [src]="report.imageUrl"
+                alt="{{ report.title }}"
+                style="width: 100%; height: 150px; object-fit: cover;"
+              />
+              <ion-card-content>
+                <ion-label>{{ report.title }} - {{ report.location }}</ion-label>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

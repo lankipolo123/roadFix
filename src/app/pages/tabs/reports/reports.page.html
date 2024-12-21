@@ -1,0 +1,33 @@
+<ion-content color="medium">
+  <!-- Header Section -->
+  <ion-header>
+    <ion-toolbar color="primary">
+      <div style="text-align: center; width: 100%;">
+        <img src="/assets/roadfixLogo.png" alt="Logo" style="height: 40px;" />
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Reported Areas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Added Text Below the Header -->
+  <ion-text class="reports-text">
+    <p style="text-align: center; font-size: 18px; color: #555;">Here are the reported areas that need attention.</p>
+  </ion-text>
+
+  <!-- Report Cards -->
+  <ion-card *ngFor="let report of reports" color="secondary" class="reported-card">
+    <ion-card-header>
+      <ion-card-title>{{ report.title }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img [src]="report.imageUrl" alt="{{ report.title }}" style="width: 100%; height: 150px; object-fit: cover;" />
+      <p>{{ report.location }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

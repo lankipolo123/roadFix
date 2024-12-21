@@ -1,0 +1,32 @@
+/* Adjust ion-label position to move upwards */
+ion-item ion-label {
+    transform: translateY(-10px); /* Moves the label upwards */
+    font-weight: bold; /* Optional: Make label bold for emphasis */
+    color: #4a4a4a; /* Optional: Change label color */
+  }
+  
+  /* Profile Setup Styling */
+  ion-card {
+    margin: 20px;
+  }
+  
+  ion-avatar {
+    margin-bottom: 10px;
+  }
+  
+  ion-item {
+    margin: 10px 0;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+  
+  /* Profile image appearance */
+  ion-avatar img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
